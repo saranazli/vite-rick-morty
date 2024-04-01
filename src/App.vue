@@ -31,7 +31,8 @@
           }
         })
         .then( result => {
-          console.log(result.data)
+        this.store.cards = result.data.results;
+        console.log(this.store.cards);
         })
         .catch( error => {
           console.log(error)
