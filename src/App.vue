@@ -3,6 +3,7 @@
   import axios from 'axios';
   import Main from './components/Main.vue';
   import Footer from './components/Footer.vue';
+  import { store } from './assets/data/store';
 
   export default {
 
@@ -12,9 +13,29 @@
       Footer
 
     },
+    data(){
+      return{
+        store
+      }
+    },
     methods:{
       getApi(){
         console.log('get api');
+        axios.get(this.store.apiUrl, {
+          params:{
+            
+          num: 25,
+          offset: 0,
+          language:'it'
+
+          }
+        })
+        .then( result => {
+          console.log(result.data)
+        })
+        .catch( error => {
+          console.log(error)
+        })
       }
     },
     mounted(){
