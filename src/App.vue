@@ -2,15 +2,15 @@
 
   import axios from 'axios';
   import Main from './components/Main.vue';
-  import Footer from './components/Footer.vue';
+  import Header from './components/Header.vue';
   import { store } from './assets/data/store';
 
   export default {
 
     components: {
 
-      Main,
-      Footer
+      Header,
+      Main
 
     },
     data(){
@@ -47,9 +47,9 @@
 
 <template>
   
+  <Header />
+  
   <Main />
-
-  <Footer />
 
 </template>
 

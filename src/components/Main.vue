@@ -16,8 +16,6 @@
 <template>
   
   <div class="gen">
-    heho
-    <h1>{{ store.counter }}</h1>
   </div>
 
 </template>

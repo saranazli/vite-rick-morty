@@ -13,11 +13,14 @@
 
 <template>
   
-  <h2> heho </h2>
-  <button @click="store.counter++" class="btn btn-primary">incrementa</button>
+  <h2> {{ store.title }} </h2>
 
 </template>
 
 <style lang="scss" scoped>
+
+h2{
+  color: blue;
+}
 
 </style>
