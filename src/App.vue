@@ -1,5 +1,6 @@
 <script>
 
+  import axios from 'axios';
   import Main from './components/Main.vue';
   import Footer from './components/Footer.vue';
 
@@ -10,6 +11,14 @@
       Main,
       Footer
 
+    },
+    methods:{
+      getApi(){
+        console.log('get api');
+      }
+    },
+    mounted(){
+      this.getApi()
     }
   }
 
